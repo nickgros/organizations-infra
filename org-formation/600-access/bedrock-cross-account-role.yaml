@@ -15,6 +15,7 @@ Resources:
     Type: 'AWS::IAM::Role'
     Properties:
       RoleName: !Ref RoleName
+      MaxSessionDuration: 43200
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/AmazonBedrockFullAccess
       AssumeRolePolicyDocument:
